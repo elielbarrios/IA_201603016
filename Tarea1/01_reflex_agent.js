@@ -8,11 +8,12 @@ function reflex_agent(location, state){
 }
 
 function test(states){
-       var location = states[0];		
-       var state = states[0] == "A" ? states[1] : states[2];
-     var action_result = reflex_agent(location, state);
-     var no_estado=getstate(states);  
-       document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result).concat(" | Estado: ").concat(no_estado);
+
+    var location = states[0];		
+    var state = states[0] == "A" ? states[1] : states[2];
+    var action_result = reflex_agent(location, state);
+    var no_estado=getstate(states);  
+    document.getElementById("log").innerHTML+="<br>Location: ".concat(location).concat(" | Action: ").concat(action_result).concat(" | Estado: ").concat(no_estado);
      
      if(no_estado==3){
          var name = prompt('Desea continuar iterando ? S/n');
